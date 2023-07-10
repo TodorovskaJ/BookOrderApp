@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="@dimen/dimen_10"
+    android:paddingStart="@dimen/dimen_10"
+    android:paddingTop="@dimen/dimen_10"
+    android:background="@color/dark_primary_color"
+    android:padding="@dimen/dimen_6"
+    android:layout_marginEnd="@dimen/dimen_10"
+    android:layout_marginStart="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TextView20"/>
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TextView18"/>
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvAuthor"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold|italic"
+
+        style="@style/TextView16"/>
+    <TextView
+        android:id="@+id/tvPage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvType"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold|italic"
+        style="@style/TextView16"/>
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvPage"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TextView18"/>
+
+    <ImageButton
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@android:drawable/ic_menu_add"
+        android:background="@android:color/transparent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+        tools:layout_editor_absoluteX="20dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
